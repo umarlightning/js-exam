@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-sm" style="width: 28rem;">
+    <h2>Pizza order</h2>
+    <form class="d-flex flex-column mb-4" id="form">
+      <input class="mb-2" id="username" type="text" placeholder="User name">
+      <input class="mb-2" id="number" type="number" placeholder="Phone number">
+      <input class="mb-2" id="address" type="text" placeholder="User address">
+      <div class="size-input mb-4 d-flex">
+        <div class="size-input-inner">
+          <label class="input-group-text" for="inputSelect">Dough thickness</label>
+        </div>
+        <select class="size-select" id="inputSelect">
+          <option selected>none</option>
+          <option data-price="10" value="Thin">Thin</option>
+          <option data-price="12" value="Medium">Medium</option>
+          <option data-price="15" value="Thick">Thick</option>
+        </select>
+      </div>
+      <div class="size-input mb-3 d-flex">
+        <div class="size-input-inner">
+          <label class="input-group-text" for="inputSelect">Size</label>
+        </div>
+        <select class="size-select" id="inputSize">
+          <option selected>select</option>
+          <option data-price="10" value="25sm">25 sm</option>
+          <option data-price="12" value="30sm">30 sm</option>
+          <option data-price="15" value="35sm">35 sm</option>
+        </select>
+      </div>
+      <h3 class="mb-4">On Pizza</h3>
+      <div class="onPizza d-flex justify-content-between mb-4">
+        <div class="left-side">
+          <div class="mb-2">
+            <label for="">TOMATO</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="tomato" />
+          </div>
+          <div class="mb-2">
+            <label for="">TURKEY MEAT</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="turkey meat" />
+          </div>
+          <div class="mb-2">
+            <label for="">OLIVE</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="olive" />
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="mb-2">
+            <label for="">PICKELED CUCUMBER</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="pickeled Cucumber" />
+          </div>
+          <div class="mb-2">
+            <label for="">MUSHROOM</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="mushroom" />
+          </div>
+          <div class="mb-2">
+            <label for="">HORSE MEAT</label>
+            <input data-price="5" type="checkbox" class="form-check-input checkbox" id="horseMeat" />
+          </div>
+        </div>
+      </div>
+      <h3 class="">Add:</h3>
+      <div class="add-checkbox d-flex">
+        <div class="mb-2" style="margin-right: 11rem;">
+          <label for="">PEPPER</label>
+          <input data-price="3" type="checkbox" class="form-check-input-nd checkbox2" id="pepper" />
+        </div>
+        <div class="mb-2">
+          <label for="">SAUSAGES</label>
+          <input data-price="3" type="checkbox" class="form-check-input-nd checkbox2" id="sausages" />
+        </div>
+      </div>
+     <div class="d-flex justify-content-around">
+      <button class="ps-5 pe-5 mt-3" type="submit">SAVE</button>
+      <button class="ps-5 pe-5 mt-3" type="reset">RESET</button>
+     </div>
+    </form>
+  </div>
+  <div class="container w-50">
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
